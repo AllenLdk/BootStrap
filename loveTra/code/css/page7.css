@@ -1,0 +1,205 @@
+/*header*/
+header{
+    width: 100%;
+    height: 40px;
+    background-color: darkcyan;
+}
+header .topmes1{
+    margin-top: 10px;
+}
+header .topmes1 a{
+    color:white;
+    margin-right: 15px;
+}
+header .topmes2{
+    margin-top: 10px;
+    float: right;
+}
+header .topmes2 a{
+    color:white;
+    margin-left: 15px;
+}
+header .topmes3{
+    margin-top: 20px;
+}
+header .topmes3 .dropdown{
+    margin-top: -25px;
+}
+header .topmes3 ul li a{
+    color: white;
+}
+header .topmes3 ul li a:hover{
+    color:darkcyan ;
+}
+header .topmes3 ul li .dropdown-menu li a{
+    color: darkcyan;
+}
+header .topmes3 ul li .dropdown-menu li a:hover{
+    color: darkcyan;
+}
+.topmes3 i{
+    margin-right: 10px;
+}
+/*nav*/
+nav{
+    margin-top: -1px;
+    height: 60px;
+}
+nav .pan ul{
+    margin-top: -6px;
+}
+.navstyle{
+    font-size: 15px;
+    float: right;
+    color: black;
+    height: 61.99px;
+}
+.navstyle li a{
+    color: black;
+    margin-top: 4px;
+}
+.pan{
+    height: 61.99px;
+}
+.navstyle li{
+    width: 100px;
+    text-align: center;
+    height: 61.99px;
+}
+.pan ul li a:hover{
+    background-color:white;
+    color: darkcyan;
+}
+.topcolor{
+    border-top: 4px solid darkcyan;
+
+}
+ul .topcolor a{
+    margin-top: -1px;
+    color: cadetblue;
+}
+/*notice*/
+.controlstyle{
+    width: 100%;
+    height: 60px;
+    background-color: #fbfbfb;
+    margin-top: -20px;
+    border: 1px solid rgba(229, 229, 229, 0.82);
+}
+.controlstyle a{
+    margin-left: 10px;
+    color:cadetblue;
+}
+/*bigtitle*/
+.spa{
+    margin-top: 20px;
+    text-align: center;
+}
+.spa a{
+    font-size: 22px;
+    color:cadetblue;
+    font-weight: bolder;
+}
+/*shuffling*/
+#shuffling{
+    margin-top: 30px;
+}
+#shuffling .container{
+    border-bottom: 1px solid silver;
+    border-left:1px solid silver ;
+    border-right: 1px solid silver;
+    background-color:#fbfbfb;
+}
+#myCarousel .change{
+    bottom:0px;
+    left: 90%;
+}
+.item .use{
+    bottom: 160px;
+    font-size: 18px;
+}
+.nav li a{
+    color: cadetblue;
+}
+.changecolor ul{
+    margin-left: -26px;
+    width: 100%;
+}
+.changecolor ul li{
+    line-height: 25px;
+}
+.changecolor ul li a{
+    color:black;
+    font-size: 15px;
+}
+.changecolor ul li a:hover{
+    color:cadetblue ;
+}
+.line-limit-length{
+    list-style: square;
+    color: cadetblue;
+}
+.line-limit-length li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    list-style-position: inside;
+}
+/*changediv*/
+#changediv .container .row{
+    width: 1170px;
+}
+#changediv .container .row a{
+    font-size: 15px;
+    color: black;
+    float: left;
+    width: 25%;
+}
+#changediv .container .row a:hover{
+    color: white;
+    text-decoration: none;
+}
+#changediv .container .row a .smadiv{
+    height: 70px;
+    width:100%;
+    background-color:#f4f4f4;
+    text-align: center;
+}
+#changediv .container .row a .smadiv:hover{
+    background-color:darkcyan;
+}
+.height-crenter{
+    padding-top: 25px;
+}
+.height-crenter  i{
+    margin-right: 8px;
+}
+/*message*/
+#message{
+    margin-top: 40px;
+}
+#message .container .row{
+    height: 400px;
+}
+#content-wrapper .clearfix{
+    width: 100%;
+}
+#message #accordion h4 a{
+    text-decoration: none;
+    color: darkcyan;
+}
+#message .panel-body em{
+    font-weight: bolder;
+}
+/*other*/
+.colorbg{
+    background-color: #eaeaea;
+}
+.cent{
+    margin-left: 120px;
+    background-color: #eaeaea;
+    font-size: 16px;
+}
+.bgcolor:hover{
+    background-color:#eaeaea ;
+}

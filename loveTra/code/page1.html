@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>旅游资讯</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-maizi.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <link href="css/page1.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/page1.js"></script>
+</head>
+<body>
+<!--登录 注册开始-->
+<div style="background-color:#f0f3f3;height: 30px">
+    <div class="col-md-10"></div>
+    <div class="col-md-2" style="margin-top: 5px">
+        <a href="#" style="font-size: 14px;font-weight:bold;color: #101010">注&nbsp;&nbsp;册</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#" style="font-size: 14px;font-weight:bold;color: black;">登&nbsp;&nbsp;陆</a>
+    </div>
+</div>
+<!--登录 注册结束-->
+<!-- 轮播开始 -->
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#"><img src="images/page1/1.jpg" alt="First slide"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/page1/2.jpg" alt="Second slide"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/page1/3.jpg" alt="Third slide"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/page1/4.jpg" alt="Fourth slide"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img src="images/page1/5.jpg" alt="Fifth slide"></a>
+        </div>
+    </div>
+</div>
+<!-- 轮播结束 -->
+<!--导航开始-->
+<div class="row">
+    <div style="background-color: black;height: 50px;margin-left: -500px;margin-right:-500px ">
+        <div class="container">
+            <!--导航菜单-->
+            <div class="col-md-8 hidden-sm">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="page0.html"><span class="glyphicon glyphicon-heart-empty">&nbsp;首&nbsp;页</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plane">&nbsp;旅&nbsp;游</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-home">&nbsp;酒&nbsp;店</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-tags">&nbsp;攻&nbsp;略</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart">&nbsp;团&nbsp;购</span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-list-alt">&nbsp;门&nbsp;票</span></a></li>
+                    <li><a href="../index.html">&nbsp;返&nbsp;回</span></a></li>
+                </ul>
+                    </div>
+            </div>
+            <!--搜索栏-->
+            <div class="col-md-4 hidden-sm">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">查&nbsp;&nbsp;询</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航结束-->
+<!--要闻栏开始-->
+<div class="container">
+<div class="row" style="margin-top: 20px;">
+    <!--轮播图-->
+    <div class="col-md-7 hidden-sm">
+        <div id="Carousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#Carousel" data-slide-to="1"></li>
+                <li data-target="#Carousel" data-slide-to="2"></li>
+                <li data-target="#Carousel" data-slide-to="3"></li>
+                <li data-target="#Carousel" data-slide-to="4"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#"><img src="images/page1/Baikal.jpg" alt="First slide"></a>
+                    <div class="carousel-caption">宽广深邃的贝加尔湖,你的美让人窒息，让人嫉妒</div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/page1/Seoul.jpg" alt="Second slide"></a>
+                    <div class="carousel-caption">我丢在韩国的那双凉鞋,一定满世界寻找我</div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/page1/Czech%20Republic.jpg" alt="Third slide"></a>
+                    <div class="carousel-caption">星期天周身银光闪闪,缀着小喇叭的糖果摊为她编织花环</div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/page1/Thousands%20of%20Islands.jpg" alt="Fourth slide"></a>
+                    <div class="carousel-caption">一千个岛屿,就有一千种生长的姿势</div>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="images/page1/Qinghai%20Chaka%20Salt%20Lake.jpg" alt="Fifth slide"></a>
+                    <div class="carousel-caption">在七月之末，一张纸还等在落笔之前</div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--要闻-->
+    <script>
+        $(function () {
+            $('.change a').mousemove(function (e) {
+                var tabId = $(this).attr('data-toggle');
+                $('.change a[href=#' + tabId + ']').tab('show');
+            });
+        });
+    </script>
+    <div class="change">
+    <div class="col-md-5 hidden-sm">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#like" data-toggle="like">猜你喜欢</a>
+            </li>
+            <li>
+                <a href="#Asia" data-toggle="Asia">亚洲</a>
+            </li>
+            <li>
+                <a href="#Europe" data-toggle="Europe">欧洲</a>
+            </li>
+            <li>
+                <a href="#SouthAmerica" data-toggle="SouthAmerica">南美洲</a>
+            </li>
+            <li>
+                <a href="#NorthAmerica" data-toggle="NorthAmerica">北美洲</a>
+            </li>
+            <li>
+                <a href="#Africa" data-toggle="Africa">非洲</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="like">
+                <br>
+                <ul style="list-style: square;color: #1b6d85;">
+                    <li><a href="#">曼谷这个亚洲最大的市集，我看到一个魔幻的世界</a></li>
+                    <li><a href="#">打造21世纪海上丝路会客厅 三亚旅游迈入3.0时代</a></li>
+                    <li><a href="#">将都市打造成重庆旅游“第一客厅”</a></li>
+                    <li><a href="#">泰国一处受游客欢迎的海滩因鲨鱼伤人事件被关闭</a></li>
+                    <li><a href="#">伊斯坦布尔安全形势复杂 中领馆吁远离敏感场所</a></li>
+                    <li><a href="#">北京植物园郁金香进入最佳观赏期</a></li>
+                    <li><a href="#">可可西里不是你想穿越就穿越的 非法穿越将追究刑事责任</a></li>
+                    <li><a href="#">女子入住成都一酒店被直播 律师：涉嫌侵权!</a></li>
+                    <li><a href="#">江北16条美丽交通走廊“融线入景”展风姿</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="Asia">
+                <br>
+                <ul style="list-style: square;color: #1b6d85;">
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                    <li><a href="#">成都青城山再现皑皑白雪，想看的同学抓紧啦!</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="Europe">
+                <br>
+                <ul style="list-style: square;color: #1b6d85">
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                    <li><a href="#">旅游学：欧洲旅游去哪里！欧洲旅游圣地有哪些？</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="SouthAmerica">
+                <br>
+                <ul style="list-style: square;color: #1b6d85;">
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                    <li><a href="#">智利为何被评为2018年最佳旅行国家Top1,它究竟有什么魔力？</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="NorthAmerica">
+                <br>
+                <ul style="list-style: square;color: #1b6d85;">
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                    <li><a href="#">在波多黎各海岛穿Bikini过夏天 | 25岁，期待遇见更好的自己</a></li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="Africa">
+                <br>
+                <ul style="list-style: square;color: #1b6d85;">
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                    <li><a href="#">静辽天空 盘点全球十大渺无人烟的“鬼国”</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+</div>
+</div>
+    </div>
+<!-- 要闻栏结束 -->
+<!-- 图片栏开始 -->
+    <section id="ima">
+        <div class="container">
+            <ul>
+                <li><a href="#"><img src="images/page1/special/chongqing.jpg"></a></li>
+                <li><a href="#"><img src="images/page1/special/dali.jpg"></a></li>
+                <li><a href="#"><img src="images/page1/special/hangzhou.jpg"></a></li>
+                <li><a href="#"><img src="images/page1/special/xiamen.jpg"></a></li>
+                <li><a href="#"><img src="images/page1/special/xianggang.jpg"></a></li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <!--图片栏结束 -->
+<!--旅游栏开始-->
+<section id="tour">
+    <div class="container">
+        <!-- 左部栏目 -->
+        <div class="col-md-3"><br><br>
+            <div class="flip-container">
+            <div class="flipper">
+            <a href="#">
+            <div class="ob">
+            <div class="col-md-4"><img src="images/page1/icon/33.png"></div>
+            <div class="col-md-8"><div class="message">大理约拍</div></div>
+            </div>
+            </a></div></div>
+            <div class="flip-container">
+                <div class="flipper">
+            <a href="#">
+                <div class="ob">
+                    <div class="col-md-4"><img src="images/page1/icon/30.png"></div>
+                    <div class="col-md-8"><div class="message">重庆夜景</div></div>
+                </div>
+            </a></div></div>
+            <div class="flip-container">
+                <div class="flipper">
+            <a href="#">
+                <div class="ob">
+                    <div class="col-md-4"><img src="images/page1/icon/31.png"></div>
+                    <div class="col-md-8"><div class="message">成都熊猫</div></div>
+                </div>
+            </a></div></div>
+            <div class="flip-container">
+                <div class="flipper">
+            <a href="#">
+                <div class="ob">
+                    <div class="col-md-4"><img src="images/page1/icon/32.png"></div>
+                    <div class="col-md-8"><div class="message">柳暗花明</div></div>
+                </div>
+            </a></div></div>
+        </div>
+        <!--中部栏目开始-->
+        <div class="col-md-5">
+            <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+                <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">法国</a></li>
+                <li><a href="#eng-new" role="tab" data-toggle="tab">英国</a></li>
+                <li><a href="#tab-safari" role="tab" data-toggle="tab">美国</a></li>
+                <li><a href="#tab-opera" role="tab" data-toggle="tab">中国</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab-chrome">
+                    <div class="row feature">
+                        <ul class="my_ul">
+                            <li><a href="#">巴黎即将举行大型浪漫婚礼庆典</a><span>2018-11-27</span></li>
+                            <li><a href="#">[多图]欧洲八大Outlet购物攻略</a><span>2018-11-27</span></li>
+                            <li><a href="#">[多图]夏季出行指南：巴黎 金色的凡尔赛宫</a><span>2018-11-27</span></li>
+                            <li><a href="#">巴黎街头真人秀</a><span>2018-11-27</span></li>
+                            <li><a href="#">[多图]全球最美12座城</a><span>2018-11-27</span></li>
+                            <li><a href="#">普罗旺斯暖风和煦在薰衣草的花海中迷失</a><span>2018-11-27</span></li>
+                            <li><a href="#">普罗旺斯交通</a><span>2018-11-27</span></li>
+                            <li><a href="#">梵高医院 Espace Van Gogh</a><span>2018-11-27</span></li>
+                            <li><a href="#">多瑙河畔 温泉美景旖旎仙境</a><span>2018-11-27</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="eng-new">
+                    <div class="row feature">
+                        <ul class="spe_ul">
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                            <li><a href="#">英国再出特色婚礼，让人羡慕不已</a><span>2018-6-26</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-safari">
+                    <div class="row feature">
+                        <ul class="my_ul">
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                            <li><a href="#">美国大兵与名模旅游结婚，他们选择了爱旅行</a><span>2018-11-27</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab-opera">
+                    <div class="row feature">
+                        <ul class="my_ul">
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                            <li><a href="#">中国旅游局发布了最新的旅游通告</a><span>2018-11-27</span></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+            </div>
+        <!-- 右部栏目开始 -->
+        <div class="col-right">
+        <div class="col-md-4">
+            <ul>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/1.png"></a></div></li><p style="margin-left: 28px">美食资讯</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/2.png"></a></div></li><p style="margin-left: 28px">海岛特惠</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/3.png"></a></div></li><p style="margin-left: 28px">限时特卖</p></div>
+            </ul>
+            <ul>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/4.png"></a></div></li><p style="margin-left: 28px">游轮精选</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/5.png"></a></div></li><p style="margin-left: 28px">自驾推荐</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/6.png"></a></div></li><p style="margin-left: 28px">首付出发</p></div>
+            </ul>
+            <ul>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/7.png"></a></div></li><p style="margin-left: 28px">婚纱旅拍</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/8.png"></a></div></li><p style="margin-left: 28px">旅行婚礼</p></div>
+                <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/9.png"></a></div></li><p style="margin-left: 28px">爱情之旅</p></div>
+            </ul>
+        </div>
+        </div>
+    </div>
+</section>
+<hr>
+<!--旅游栏结束 -->
+<!--互动交流开始-->
+<!-- 左部栏目 -->
+<section id="communication">
+    <div class="container">
+        <div class="col-md-4" style="margin-left: -50px">
+            <ul style="margin-top: 50px">
+                <li>
+                <a href="#"><div class="ckk">
+                    <div class="col-md-4"><img src="images/page1/icon/10.png"></div>
+                    <div class="col-md-8"><div class="message">爆款热销</div></div>
+                </div></a>
+                </li>
+                <li>
+                    <a href="#"><div class="ckk">
+                        <div class="col-md-4"><img src="images/page1/icon/33.png"></div>
+                        <div class="col-md-8"><div class="message">签证热销</div></div>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#"><div class="ckk">
+                        <div class="col-md-4"><img src="images/page1/icon/34.png"></div>
+                        <div class="col-md-8"><div class="message">畅游欧洲</div></div>
+                    </div></a>
+                </li>
+            </ul>
+            <ul style="float: right;margin-top: -190px">
+            <li>
+                <a href="#"><div class="ckk">
+                    <div class="col-md-4"><img src="images/page1/icon/35.png"></div>
+                    <div class="col-md-8"><div class="message">包船专享</div></div>
+                </div></a>
+            </li>
+            <li>
+                <a href="#"><div class="ckk">
+                    <div class="col-md-4"><img src="images/page1/icon/36.png"></div>
+                    <div class="col-md-8"><div class="message">特惠签证</div></div>
+                </div></a>
+            </li>
+            <li>
+                <a href="#"><div class="ckk">
+                    <div class="col-md-4"><img src="images/page1/icon/37.png"></div>
+                    <div class="col-md-8"><div class="message">国内邮轮</div></div>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+<!-- 中部栏目 -->
+        <div class="col-md-4" style="margin-left: 40px">
+            <ul class="nav nav-tabs" role="tablist" id="feature-tab1">
+                <li class="active"><a href="#news1" role="tab" data-toggle="tab">超级体验</a></li>
+                <li><a href="#news2" role="tab" data-toggle="tab">精选</a></li>
+                <li><a href="#news3" role="tab" data-toggle="tab">玩乐</a></li>
+                <li><a href="#news4" role="tab" data-toggle="tab">达人</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="news1">
+                    <div class="row feature">
+                        <ul class="y_ul">
+                            <a href="#"><li><div class="Square">
+                            <img src="images/page1/icon/11.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/12.png">三人同行
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/13.png">拼单出行
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/14.png">甜蜜出游
+                            </div></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="news2">
+                    <div class="row feature">
+                        <ul class="y_ul">
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/15.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/16.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/17.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/18.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/19.png">最新体验
+                            </div></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="news3">
+                    <div class="row feature">
+                        <ul class="y_ul">
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/20.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/21.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/22.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/23.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/24.png">最新体验
+                            </div></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="news4">
+                    <div class="row feature">
+                        <ul class="y_ul">
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/25.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/26.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/27.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/28.png">最新体验
+                            </div></li>
+                            </a>
+                            <a href="#"><li><div class="Square">
+                                <img src="images/page1/icon/29.png">最新体验
+                            </div></li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </div>
+<!-- 右部栏目 -->
+        <div class="col-md-4" style="margin-left: 10px">
+                <ul>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/43.png"></a></div></li><p style="margin-left: 28px">最新代驾</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/38.png"></a></div></li><p style="margin-left: 28px">酒店推荐</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/44.png"></a></div></li><p style="margin-left: 28px">跟团旅游</p></div>
+                </ul>
+                <ul>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/39.png"></a></div></li><p style="margin-left: 28px">驴友推荐</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/40.png"></a></div></li><p style="margin-left: 28px">群体出行</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/45.png"></a></div></li><p style="margin-left: 28px">出行手册</p></div>
+                </ul>
+                <ul>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/41.png"></a></div></li><p style="margin-left: 28px">在线客服</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/42.png"></a></div></li><p style="margin-left: 28px">详细介绍</p></div>
+                    <div class="baog"><li class="delete"><div class="rotating"><a href="#"><img src="images/page1/icon/46.png"></a></div></li><p style="margin-left: 28px">最新折扣</p></div>
+
+                </ul>
+        </div>
+    </div>
+</section><hr>
+<!--互动交流结束-->
+<!--特别信息开始-->
+<section id="newmessage">
+    <div class="container">
+    <div class="col-lg-3">
+        <div class="flip-container">
+            <div class="flipper">
+        <a href="#">
+            <div class="ob">
+                <div class="col-md-4"><img src="images/page1/icon/47.png"></div>
+                <div class="col-md-8"><div class="message">顾客专区</div></div>
+            </div>
+        </a></div></div>
+        <div class="flip-container">
+            <div class="flipper">
+        <a href="#">
+            <div class="ob">
+                <div class="col-md-4"><img src="images/page1/icon/48.png"></div>
+                <div class="col-md-8"><div class="message">写给我们</div></div>
+            </div>
+        </a></div></div>
+        <div class="flip-container">
+            <div class="flipper">
+        <a href="#">
+            <div class="ob">
+                <div class="col-md-4"><img src="images/page1/icon/49.png"></div>
+                <div class="col-md-8"><div class="message">更多信息</div></div>
+            </div>
+        </a></div></div>
+        <div class="flip-container">
+            <div class="flipper">
+        <a href="#">
+            <div class="ob">
+                <div class="col-md-4"><img src="images/page1/icon/50.png"></div>
+                <div class="col-md-8"><div class="message">合作投资</div></div>
+            </div>
+        </a></div></div>
+    </div>
+    <div class="col-lg-5">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="text-align: center"><h4><a href="#">超值套餐推荐</a></h4></div>
+            <table class="table" style="text-align: center">
+                <tr><td><b>套餐</b></td><td><b>价格</b></td></tr>
+                <tr>
+                    <td><a href="#">昆明+大理+丽江6天自由行</a></td><td>1820元起</td>
+                    <td><button name="subject" value="buy" class="btn btn-default" style="height: 30px;margin-top: -5px">购买</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">丽江5/7天休闲自由行</a></td><td>2218元起</td>
+                    <td><button name="subject" value="buy" class="btn btn-default" style="height: 30px;margin-top: -5px">购买</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">滇东南行摄浪漫之旅</a></td><td>1523元起</td>
+                    <td><button name="subject" value="buy" class="btn btn-default" style="height: 30px;margin-top: -5px">购买</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">武汉直飞沙巴5天5晚自由行</a></td><td>6854元起</td>
+                    <td><button name="subject" value="buy" class="btn btn-default" style="height: 30px;margin-top: -5px">购买</button></td>
+                </tr>
+                <tr>
+                    <td><a href="#">香港直飞苏梅岛5天4晚自由行</a></td><td>5421元起</td>
+                    <td><button name="subject" value="buy" class="btn btn-default" style="height: 30px;margin-top: -5px">购买</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse"
+                            data-target=".bs-js-navbar-scrollspy">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#lijiang">丽江</a></li>
+                        <li><a href="#qijiang">綦江</a></li>
+                        <li><a href="#xiannv">仙女山</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0"
+             style="height:200px;overflow:auto; position: relative;">
+            <h4 id="lijiang">丽江简介</h4>
+            <p>丽江古城位于云南省丽江市古城区，又名大研镇，坐落在丽江坝中部，始建于宋末元初（公元13世纪后期），地处云贵高原，面积为7.279平方公里。
+                丽江古城内的街道依山傍水修建，以红色角砾岩铺就，有四方街、木府、五凤楼等景点。丽江为第二批被批准的中国历史文化名城之一，是中国以整座古城申报世界文化遗产获得成功的两座古城之一。
+                丽江古城有着多彩的地方民族习俗和娱乐活动，纳西古乐、东巴仪式、占卜文化、古镇酒吧以及纳西族火把节等，别具一格。丽江古城体现了中国古代城市建设的成就，是中国民居中具有鲜明特色和风格的类型之一。
+                2017年2月25日，经国家旅游局局长办公会审议，全国旅资委决定给予云南省丽江市丽江古城景区严重警告，限期6个月整改。
+            </p>
+            <h4 id="qijiang">綦江简介</h4>
+            <p>綦江，长江上游南岸支流。发源于乌蒙山西北麓贵州省桐梓县北大娄山系，流经重庆市綦江区，于江津区仁沱镇顺江村汇入长江。
+                据明代曹学佺《蜀中名胜记》载： “江发源夜郎，作苍帛色，故名綦。”因流经夜郎境曾称夜郎溪。南齐时称棘溪，元代又称南江。流域处于贵州省北部和重庆市西南部，位于东经 106°19†～ 107°15†、北纬28°11†～29°18†，
+                地跨贵州省桐梓县、习水县和重庆市綦江区、江津区、南川区、巴南区等6 个区县。
+            </p>
+            <h4 id="xiannv">仙女山简介</h4>
+            <p>仙女山，国家AAAAA级风景区，国家森林公园，重庆十佳旅游景点。
+                仙女山位于重庆市武隆区境乌江北岸，地属武陵山脉，距重庆市主城区180千米，海拔2033米，拥有森林33万亩，天然草原10万亩，夏季平均气温24℃。以其江南独具魅力的高山草原，南国罕见的林海雪原，青幽秀美的丛林碧野景观，被誉为“南国第一牧原”和“东方瑞士”，其旖旎美艳的森林草原风光在重庆独树一帜。
+                仙女山冬季白雪皑皑、银妆纱裹，雾松、冰瀑令人情潮涌动，是重庆周边观赏雪景、开展雪上运动的绝佳旅游胜地；夏季茫茫林海，清风吹拂，凉爽宜人，平均气温比重庆主城区低15℃，有“山城夏宫”之美誉。
+                仙女山与神奇的芙蓉洞、秀美的芙蓉江、世界最大的天生三硚群地质奇观，组合为重庆最佳旅游观光度假胜地，仙女山与江津石门镇的石笋山堪称重庆二绝。
+            </p>
+        </div>
+    </div>
+    </div>
+</section><hr>
+<!--特别信息结束-->
+<!--友情链接开始-->
+<section id="friend">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="magic">
+            <row>
+                <div class="col-lg-2"><h3>友情链接</h3></div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li> <a href="#">携程旅游</a></li>
+                        <li> <a href="#">马蜂窝自由行</a></li>
+                        <li> <a href="#">腾讯QQ</a></li>
+                        <li> <a href="#">旅游网</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li> <a href="#">马可波罗</a></li>
+                        <li> <a href="#">艺龙旅游指南</a></li>
+                        <li> <a href="#">锦江旅游</a></li>
+                        <li> <a href="#">火车时刻表</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li> <a href="#">遨游旅游网</a></li>
+                        <li> <a href="#">旅游</a></li>
+                        <li> <a href="#">五分旅游网</a></li>
+                        <li> <a href="#">天巡网</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li> <a href="#">TripAdvisor</a></li>
+                        <li> <a href="#">波多多自助游</a></li>
+                        <li> <a href="#">yunOS</a></li>
+                        <li> <a href="#">爱问共享资料</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul>
+                        <li> <a href="#">网易音乐</a></li>
+                        <li> <a href="#">欣欣旅游网</a></li>
+                        <li> <a href="#">Onlylady女人志</a></li>
+                        <li> <a href="#">重庆文理学院</a></li>
+                    </ul>
+                </div>
+            </row>
+            </div>
+        </div>
+    </div>
+</section>
+<!--友情链接结束-->
+<!--footer开始-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    © 2018 loveTravel.cn 京ICP备11845695号 京公网安备110845123401号 京ICP证909060号
+                </p>
+                <p>
+                    营业执照 新出网证(京)字242号 爱旅行客服：国内 023-18166323171 海外 +86-18166323171  技术支持：黎东珂
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+<!-- 返回顶层开始 -->
+<div class="go-top dn" id="go-top">
+    <a href="javascript:;" class="uc-2vm"></a>
+    <div class="uc-2vm-pop dn">
+        <h2 class="title-2wm">用微信扫一扫</h2>
+        <div class="logo-2wm-box">
+            <img src="images/index/weixin.jpg" alt="爱旅行" >
+        </div>
+    </div>
+    <a href="#" target="_blank" class="feedback"></a>
+    <a href="javascript:;" class="go"></a>
+</div>
+<script>
+    $(function(){
+        $(window).on('scroll',function(){
+            var st = $(document).scrollTop();
+            if( st>0 ){
+                if( $('#main-container').length != 0  ){
+                    var w = $(window).width(),mw = $('#main-container').width();
+                    if( (w-mw)/2 > 70 )
+                        $('#go-top').css({'left':(w-mw)/2+mw+20});
+                    else{
+                        $('#go-top').css({'left':'auto'});
+                    }
+                }
+                $('#go-top').fadeIn(function(){
+                    $(this).removeClass('dn');
+                });
+            }else{
+                $('#go-top').fadeOut(function(){
+                    $(this).addClass('dn');
+                });
+            }
+        });
+        $('#go-top .go').on('click',function(){
+            $('html,body').animate({'scrollTop':0},500);
+        });
+
+        $('#go-top .uc-2vm').hover(function(){
+            $('#go-top .uc-2vm-pop').removeClass('dn');
+        },function(){
+            $('#go-top .uc-2vm-pop').addClass('dn');
+        });
+    });
+</script>
+<!-- 返回顶层结束 -->
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/wow.min.js"></script>
+</body>
+</html>

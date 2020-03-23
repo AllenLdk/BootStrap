@@ -1,0 +1,28 @@
+@charset "UTF-8";
+main.container {
+  margin-top: 20px;
+}
+main.container .left a {
+  line-height: 60px;
+  display: block;
+  font-size: 20px;
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  text-decoration: none;
+}
+main.container .left a:hover {
+  color: darkblue;
+}
+main.container .left a.no {
+  border: none;
+}
+main.container div.right {
+  line-height: 2em;
+}
+main.container div.right p {
+  text-align: left;
+}
+main.container div.news-date {
+  margin: 15px;
+}

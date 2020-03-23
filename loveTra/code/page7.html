@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>活动专区</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <!-- 引入自定义css -->
+    <link href="css/page7.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="css/simple-calendar.css">
+    <!-- 引入 font-awesome -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- 日历插件引入 -->
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <!-- 返回顶部 -->
+    <link href="css/zzsc.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="css/simple-calendar.css">
+    <style>
+        #calendar{
+            width: 100%
+        }
+        .clearfix{
+            margin-bottom: 50px !important;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部开始 -->
+<header>
+    <div class="container">
+        <div class="top">
+            <div class="col-md-3 topmes1">
+                <a href="page0.html">爱旅行首页</a>
+                <a href="../index.html">返回</a>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 topmes3">
+                <div style="float: right">
+                    <ul class="nav navbar-nav show">
+                        <li class="dropdown name1">
+                            <a href="#" class="dropdown-toggle toggle1" data-toggle="dropdown">
+                                官方微博
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-weibo"></i>新浪微博</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-tencent-weibo"></i>腾讯微博</a></li>
+                            </ul>
+                            <script>
+                                $(document).ready(function(){
+                                    $(".topmes3 .name1 a").hover(function(){//鼠标悬停触发事件
+                                        $(".toggle1").dropdown('toggle');
+                                    });
+                                });
+                            </script>
+                            <style type="text/css">
+                                .show:hover+.name1{
+                                    display:block;
+
+                                }
+                            </style>
+                        </li>
+                        <li class="dropdown name2">
+                            <a href="#" class="dropdown-toggle toggle2" data-toggle="dropdown">
+                                手机客户端
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-android"></i>安卓客户端</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li><a href="#"><i class="fa fa-apple"></i>苹果客户端</a></li>
+                            </ul>
+                            <script>
+                                $(document).ready(function(){
+                                    $(".topmes3 .name2 a").hover(function(){//鼠标悬停触发事件
+                                        $(".toggle2").dropdown('toggle');
+                                    });
+                                });
+                            </script>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle toggle3" data-toggle="dropdown">
+                                官方微信
+                            </a>
+                        </li>
+                        <li class="dropdown name4">
+                            <a href="#" class="dropdown-toggle toggle4" data-toggle="dropdown">
+                                邮箱
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>官方邮箱</a></li>
+                            </ul>
+                            <script>
+                                $(document).ready(function(){
+                                    $(".topmes3 .name4 a").hover(function(){//鼠标悬停触发事件
+                                        $(".toggle4").dropdown('toggle');
+                                    });
+                                });
+                            </script>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                ENGLISH
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- 顶部结束 -->
+<!-- 导航开始 -->
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <a href="page0.html"><img src="images/page7/logo.png" style="margin-top: 10px;float: left"></a>
+            </div>
+            <div class="col-md-10 pan">
+                <div class="navbar navstyle" role="navigation">
+                     <ul class="nav navbar-nav">
+                          <li class="active topcolor"><a href="#">首页<b class="caret"></b></a></li>
+                          <li><a href="#">全网活动<b class="caret"></b></a></li>
+                          <li><a href="#">领券中心<b class="caret"></b></a></li>
+                          <li><a href="#">低价团购<b class="caret"></b></a></li>
+                          <li class="dropdown"><a href="#">尾单甩卖<b class="caret"></b></a></li>
+                          <li><a href="#">淡季特卖<b class="caret"></b></a></li>
+                          <li><a href="#">筛选新品<b class="caret"></b></a></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<hr style="border: 1px solid rgba(229, 229, 229, 0.82)">
+<!-- 导航结束 -->
+<!-- 通知开始 -->
+<section id="notice">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 controlstyle">
+                <div style="margin-top: 20px;margin-left: 20px;color:darkcyan">
+                <span class="glyphicon glyphicon-volume-up"></span><a href="#">爱旅行最近又推出了足以让你们心动的产品啦！赶紧买买买吧！！！</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 通知结束 -->
+<!-- 大标题开始 -->
+<section id="bigtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 spa">
+                <a href="#">爱旅行最新推出了千人共游活动，对这个活动有兴趣的小伙伴都可以积极的加入我们哦，先到先得，名额有限，抓紧时间行动吧！！！</a>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<!-- 大标题结束 -->
+<!-- 轮播开始 -->
+<section id="shuffling">
+    <div class="container"><br>
+        <div class="row">
+            <div class="col-md-5">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators change">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/page7/3.jpg" alt="First slide">
+                            <div class="carousel-caption use">最新西班牙组合套餐游出炉啦！</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/page7/2.jpg" alt="Second slide">
+                            <div class="carousel-caption use">和我一起去寻找那属于山巅的故事吧！</div>
+                        </div>
+                        <div class="item">
+                            <img src="images/page7/1.jpg" alt="Third slide">
+                            <div class="carousel-caption use">踏上旅途，永不回眸</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function () {
+                    $('.stff a').mousemove(function (e) {
+                        var tabId = $(this).attr('data-toggle');
+                        $('.stff a[href=#' + tabId + ']').tab('show');
+                    });
+                });
+            </script>
+            <div class="stff">
+            <div class="col-md-7">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#hot" data-toggle="hot">热门活动</a>
+                    </li>
+                    <li>
+                        <a href="#key" data-toggle="key">活动要点</a>
+                    </li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane in active changecolor" id="hot" >
+                        <br>
+                        <ul class="line-limit-length">
+                            <li><a href="#">5月旅游节·半价狂欢，美签、加签、英签、澳签 ¥999即可办理！热门行程5折秒杀，最低$8.8可得,人气热门行程满</a></li>
+                            <li><a href="#">夏季欧洲玩法，85折起,北欧的山水峡湾，不列颠的英式城堡，你更中意哪一个？？</a></li>
+                            <li><a href="#">精品·亲友小团,亲友小团，组合购买即享9折优惠；满额立减，最高可减$1000</a></li>
+                            <li><a href="#">欧洲循环游,玩转18国50城，行程路线DIY，全程四星级酒店，仅€75一天</a></li>
+                            <li><a href="#">(3天)法国巴黎深度游：卢浮宫博物馆、乘凡尔赛特快参观凡尔赛宫、巴黎市内巴士观光、塞纳河游船(含卢浮宫和凡尔赛宫的门票、中文语音讲解器)【编号:124722】</a></li>
+                            <li><a href="#">毛里求斯7天5晚半自助游 • 4星RIU面海房+酒店24小时全天服务+不限量饮料或小食+快艇出海追海豚+免费水陆活动+赠蜜月套餐+包机</a></li>
+                            <li><a href="#">(5天)美东名城豪华跟团游：览波士顿、华盛顿四大名城风采，访三大世界名校，纽约夜游</a></li>
+                            <li><a href="#">【电子票】尼亚加拉号角者游轮：近距离接触尼亚加拉瀑布，加拿大最具标志性的旅游体验</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane changecolor" id="key">
+                        <br>
+                        <ul class="line-limit-length">
+                            <li><a href="#">(14天)美西黄石大环线经典之旅：羚羊彩穴看绚丽景观、浪漫旧金山市区游、南加主题项目八选二</a></li>
+                            <li><a href="#">(6天)美西主题项目畅游：南加主题项目十选五，深度体验，乐趣无穷</a></li>
+                            <li><a href="#">【私家包团 途风独家首创•坐着房车去旅行】(3天)死亡谷原生态探险小众游：星空摄影体验、徒步穿越“星球大战”塔图因星球</a></li>
+                            <li><a href="#">【独家上羚羊最佳时间入谷】摄影天堂上羚羊/下羚羊峡谷、奇美马蹄湾一日游</a></li>
+                            <li><a href="#"><2日>【独家上羚羊谷】美西摄影天堂精致游·上羚羊峡谷+马蹄湾+大峡谷国家公园·精华之旅</a></li>
+                            <li><a href="#">(2天)【独家】美西大峡谷观日出深度游：独家视角赏南峡绝美日出、上羚羊峡谷最佳观景点、惊魂夺魄马蹄湾、66号公路、沙漠绝美之旅</a></li>
+                            <li><a href="#">(7天)加拿大东部精华游：魅力千岛湖、壮阔尼亚加拉大瀑布、五大名城、深度游多伦多、奥特莱斯购物</a></li>
+                            <li><a href="#">【私家包团 加拿大东部夏季大城小镇深度之旅】(8天)多伦多+渥太华+蒙特利尔+魁北克：深度探访五大名城、圣安妮大峡谷独家景点</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div><br>
+    </div>
+</section>
+<!-- 轮播结束 -->
+<!-- 块级元素切换开始 -->
+<section id="changediv">
+    <div class="container">
+        <div class="row">
+            <a href="#"><div class="smadiv" style="background:darkcyan;color: white"><div class="height-crenter"><i class="fa fa-envira"></i>活动推销 <b class="glyphicon glyphicon-chevron-up"></b></div></div></a>
+            <a href="#"><div class="smadiv"><div class="height-crenter"><i class="fa fa-opencart"></i>寻志愿者 <b class="glyphicon glyphicon-chevron-up"></b></div></div></a>
+            <a href="#"><div class="smadiv"><div class="height-crenter"><i class="fa fa-yelp"></i>公司招聘 <b class="glyphicon glyphicon-chevron-up"></b></div></div></a>
+            <a href="#"><div class="smadiv"><div class="height-crenter"><i class="fa fa-twitch"></i>意见征集 <b class="glyphicon glyphicon-chevron-up"></b></div></div></a>
+        </div>
+    </div>
+</section>
+<!-- 块级元素切换结束 -->
+<!-- 两张图片开始 -->
+<section id="image">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><a href="#"><img src="images/page7/image1.jpg" style="width: 103%;margin-left: -15px;margin-top: 40px"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-12"><a href="#"><img src="images/page7/image2.jpg" style="width:106%;margin-left: -30px;margin-top: 40px"></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 两张图片结束 -->
+<!-- 信息与日历开始 -->
+<section id="message">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <a href="#"><div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne">
+                                    真正的“一价全包”————支付一次费用，全程无隐形消费<span style="float: right"><i class="fa fa-hand-o-down"></i></span>
+                                </a>
+                            </h4>
+                        </div></a>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>从航班降落的那一刻起，您在爱旅行的行程中，
+                                    只有假期的享受，无任何的隐形消费。</p>
+                                <em>接送机服务</em>
+                                <p>一下飞机，身着红色制服的爱旅行接机专员就会迎接并护送您到码头登船。
+                                    当然在行程的最后一天，他们也将您送至机场。</p><br>
+                                <em>观景客房</em>
+                                <p>爱旅行提供5种高品质客房供您选择，所有客房均有良好采光，
+                                    可悠闲观赏两岸美景，确保温馨舒适的入住体验。</p><br>
+                                <em>全程餐饮 | 美食荟萃</em>
+                                <p>一日三餐以及岸上行程的餐饮都是免费的。
+                                    除了地道的欧洲美食，豆浆油条、广式煲汤、粥粉面饭这样的中餐也一应俱全。</p><br>
+                                <em>全程路上交通</em>
+                                <p>岸上与船上同样便捷舒适，当您开始内河行程的同时，
+                                    爱旅行专属豪华大巴会全程相随，解决您岸上观光的交通问题。</p><br>
+                                <p>众所周知，欧洲各景点的门票价格不菲，但是在爱旅行，
+                                    行程内所到目的地岸上观光的景点门票都已包含在游轮费用之中。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo">
+                                    全中文礼宾服务————打破语言障碍，船上岸上都能轻松交流<span style="float: right"><i class="fa fa-hand-o-down"></i></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <em>贴心服务</em>
+                                <p>爱旅行始终认为，您的假期应该是惬意和放松的。旅程中，我们希望您卸下平日的疲惫，
+                                    使用您最习惯的语言、提出一切您希望得到的服务需求，享受我们无微不至的照顾。
+                                    因此，在爱旅行的行程中，礼宾人员、船上的服务人员、当地的导游，
+                                    都可以为您提供中文服务，确保您无论是在岸上游览或是在船上休息时，都能感受自在自如。</p>
+                                <em>接送机服务</em>
+                                <p>当您的飞机抵达目的地时，爱旅行的旅游礼宾会手举接机指示牌，等候您的莅临。
+                                    他们会热情地与您确认姓名，指引您领取行李后快速通关，并引领您去往集合地。
+                                    之后，您将坐上爱旅行的专属大巴前往停靠在市中心的内河游轮，整个过程高效便捷。
+                                    同样，在行程的最后一天，爱旅行也会根据各位贵宾的航班时间，将您送至当地机场，协助您办理退税手续和登机手续。</p>
+                                <em>全程中文服务支持</em>
+                                <p>“全程中文服务支持”是爱旅行引以为傲的贴心服务之一。
+                                    为了让您在欧洲游玩时不会受到语言的限制，我们特别聘请了数十位中国籍工作人员作为“中文礼宾员”，协助您在岸上的游览观光。
+                                    因此，无论在船上或是在陆地上，您都可以尽情表达自己的意见与建议。
+                                    同时，可千万别小看了船上的外籍工作人员，他们也都在努力学习中文中，不信的话，您可以亲自试一试。</p>
+                                <em>购物顾问</em>
+                                <p>我们了解到您希望在欧洲尽情购物的心情，所以专设“中文购物顾问”解答您所有的疑问，
+                                    例如您关心的如何退税、在法国哪里可以一次性买到更多名牌、在瑞士买手表的好去处有哪些，行程内的哪一天更适合购物等等。
+                                    爱旅行的中文购物顾问每天都会在咨询台前为您服务，解答您所有关于欧洲购物的问题。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree">
+                                    行前准备————爱旅行特别提示您的小Tips<span style="float: right"><i class="fa fa-hand-o-down"></i></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <em>护照</em>
+                                <p>所有的国际旅行护照均需至少六个月的有效期。如果需要更新护照，请及时联系所在地出入境管理中心。
+                                    登船后，您需要出示您的护照。通常情况下，护照会在几个小时后归还于您。
+                                    在一些国家，您将需要在巡游期间将护照留在接待处，这样主管部门在登船进行例行检查时可以进行查看。
+                                    如果对这一程序存在任何疑问，请联系您所在游轮礼宾部。</p>
+                                <em>实施人群及需提交材料</em>
+                                <p>1.本市户籍人员的非本市户籍的配偶、未满16周岁的子女（登记备案国家工作人员除外）
+                                    需提交本人户口簿、居民身份证以及双方亲属关系的证明材料。<br>
+
+                                    2.非本市户籍的就业和就学人员及其配偶、未满16周岁的子女（登记备案国家工作人员除外）需提交户口簿、居民身份证。
+                                    就业人员还需提交社保部门出具的在就业地连续一年以上缴纳社会保险的证明；
+                                    就学人员还需提交就读院校出具的在学证明；
+                                    上述人员的配偶、子女还需提交居住地公安机关出具的居住6个月（含）以上的证明（包括居住证、暂住证等），如其户口簿不能证明亲属关系，则需提交其他证明材料。</p>
+                                <em>公民申请普通护照应当提交的材料</em>
+                                <p>（一）近期免冠照片一张以及填写完整的《中国公民因私出国（境）申请表》（以下简称申请表）；<br>
+                                    （二）居民身份证和户口簿及复印件；在居民身份证领取、换领、补领期间，可以提交临时居民身份证和户口簿及复印件；<br>
+                                    （三）未满十六周岁的公民，应当由其监护人陪同，并提交其监护人出具的同意出境的意见、监护人的居民身份证或者户口簿、护照及复印件；<br>
+                                    （四）国家工作人员应当按照有关规定，提交本人所属工作单位或者上级主管单位按照人事管理权限审批后出具的同意出境的证明;
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div id="Carousel" class="carousel slide">
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="images/page7/lunbo4.jpg" alt="First slide">
+                        </div>
+                        <div class="item">
+                            <img src="images/page7/lunbo5.jpg" alt="Second slide">
+                        </div>
+                        <div class="item">
+                            <img src="images/page7/lunbo6.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- 日历开始 -->
+                <div id="content-wrapper">
+                    <div class="inner clearfix">
+                        <div id = 'calendar'>
+
+                        </div>
+                    </div>
+
+                </div>
+                <script type="text/javascript" src="js/simple-calendar.js"></script>
+                <script>
+                    var myCalendar = new SimpleCalendar('#calendar');
+                </script>
+                <!-- 日历结束 -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 信息与日历结束 -->
+<!-- other开始 -->
+<section id="other">
+    <div class="container-fluid">
+        <div class="row colorbg">
+            <div class="cent">
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup bgcolor">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-vine"></i>   友情链接<b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.ctrip.com/">携程旅游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.mlxj19.com/">新疆旅行社</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.qulv.com/">趣旅</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.tuniu.com/">途牛旅行</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.mafengwo.cn/">马蜂窝旅行</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.lvmama.com/">驴妈妈旅游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.ly.com/">同程旅游</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.qyer.com/">穷游网</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-google-wallet"></i>    合作伙伴 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.booking.com/index.zh.html?aid=1265811;label=baidu-url-targeting-hash-JDxvpAVcKeIiYfa5q4AJjw&utm_source=baidu&utm_medium=cpc&utm_campaign=url-targeting&utm_term=JDxvpAVcKeIiYfa5q4AJjw">Booking.com缤客</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.ihg.com/intercontinental/hotels/cn/zh/hangzhou/hghha/hoteldetail?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.va.sp.nd.ct&qChld=0&qFRA=1&qGRM=0&qIta=99602392&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qSHp=1&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&icdv=99602392&cm_mmc=mdpr-_-Baidu-_-MB-_-Search-_-GC-_-B-GC-CHN-Hangzhou-HGHHA-_-CHN-Hangzhou-WB-M-_-%E6%9D%AD%E5%B7%9E%E6%B4%B2%E9%99%85%E9%85%92%E5%BA%97%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99&glat=SEAR_mdpr-_-Baidu-_-MB-_-Search-_-GC-_-B-GC-CHN-Hangzhou-HGHHA-_-CHN-Hangzhou-WB-M-_-%20%20%20%20%20%20%20%20%20%20&setPMCookies=true">杭州洲际酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://www.agoda.com/zh-cn/?cid=1658406&hl=zh-cn&type=1&utm_source=baidu&utm_medium=cpc&utm_content=%u4ef7%u683c|%u7f51|AT:%u9152%u5e97|GT:Tail-P&utm_campaign=AC:Baidu|GT&utm_term=%u9152%u5e97%u4ef7%u683c%u7f51&utm_account=2572433&tag=3de44e1e47a64249984aceabd63c438c30ee#">安可达</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://hotel.elong.com/?semwp=common&semid=zdhbaidu&&match_type=1&semtcid=18b36a90-2b7c-422c-ab04-141ecd22b615&audience=187291">艺龙网</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.starwoodhotels.com/index.html">喜达屋酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.huazhu.com/">华住会</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.yestehotel.com/">雅思特酒店</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.hoteldua.com.tw/">Hotel dua</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.mayi.com/minsu/index/?ca_s=sem_baidu&ca_n=44322814804&ca_i=ad">蚂蚁民宿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-mixcloud"></i>    客户服务 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">预定指南</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">签证服务</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">旅游保险</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">服务中心</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-whatsapp"></i>    预订须知 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">信用卡支付验证书</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">客户协议</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">取消和修改条例</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-google-plus"></i>  合作加盟 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">商务合作</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">网站联盟</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="nav navbar-nav">
+                    <li class="dropup">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-child"></i>    关于爱旅行 <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">关于我们</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">新闻中心</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</section><hr>
+<!-- other结束 -->
+<!--footer开始-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <p style="margin-top: -20px">
+                    © 2018 loveTravel.cn 京ICP备11845695号 京公网安备110845123401号 京ICP证909060号<br>
+                    营业执照 新出网证(京)字242号 爱旅行客服：国内 023-18166323171 海外 +86-18166323171  技术支持：黎东珂
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer结束-->
+<!-- 返回顶层开始 -->
+<div class="go-top dn" id="go-top">
+    <a href="javascript:;" class="uc-2vm"></a>
+    <div class="uc-2vm-pop dn">
+        <h2 class="title-2wm">用微信扫一扫</h2>
+        <div class="logo-2wm-box">
+            <img src="images/index/weixin.jpg" alt="爱旅行" >
+        </div>
+    </div>
+    <a href="#" target="_blank" class="feedback"></a>
+    <a href="javascript:;" class="go"></a>
+</div>
+<script>
+    $(function(){
+        $(window).on('scroll',function(){
+            var st = $(document).scrollTop();
+            if( st>0 ){
+                if( $('#main-container').length != 0  ){
+                    var w = $(window).width(),mw = $('#main-container').width();
+                    if( (w-mw)/2 > 70 )
+                        $('#go-top').css({'left':(w-mw)/2+mw+20});
+                    else{
+                        $('#go-top').css({'left':'auto'});
+                    }
+                }
+                $('#go-top').fadeIn(function(){
+                    $(this).removeClass('dn');
+                });
+            }else{
+                $('#go-top').fadeOut(function(){
+                    $(this).addClass('dn');
+                });
+            }
+        });
+        $('#go-top .go').on('click',function(){
+            $('html,body').animate({'scrollTop':0},500);
+        });
+
+        $('#go-top .uc-2vm').hover(function(){
+            $('#go-top .uc-2vm-pop').removeClass('dn');
+        },function(){
+            $('#go-top .uc-2vm-pop').addClass('dn');
+        });
+    });
+</script>
+<!-- 返回顶层结束 -->
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="js/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE">
+    <meta name="sy-1" content="width=device-width,initial-scale=1"/>
+    <title>个人主页</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/page9.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="container">
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="page0.html"><img src="images/page9/Trekker.png" style="width: 50%"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#divNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="divNav" class="collapse navbar-collapse">
+                <a href="../index.html" style="font-size: 20px;padding-top: 20px;color: white">返回</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button type="button" class="btn btn-success navbar-btn">
+                          <a href="page9-9.html" style="text-decoration: none;color: white">关于</a>
+                        </button>
+                        <button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#divModal" title="print">
+                            信息
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Download">其他</button>
+                        <script>
+                            $(function(){
+                                $('[data-toggle="tooltip"]').tooltip();
+                            })
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="divModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">黎东珂</h4>
+                </div>
+                <div class="modal-body">
+                    欢迎来到黎东珂的个人主页，这里有关于爱旅行创始者Allen——黎东珂的个人主页。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">打印</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row">
+    <div class="col-sm-3">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center"><strong>Personal Info</strong></div>
+            <div class="panel-body">
+                <img src="images/page9/head.jpg" class="img-responsive img-rounded img-thumbnail" alt="me">
+                <br/>
+                <h4 class="text-center text-primary" style="color: black">Allen</h4>
+                <address>
+                    <strong>个人中心</strong>
+                    <br/>
+                    <a href="#"><span class="glyphicon glyphicon-cloud marg" title="Address"><code>&nbsp;我的作品</code></span></a><br/>
+                    <a href="#"><span class="fa fa-gg"><kbd>我的收藏</kbd></span></a><br/>
+                    <a href="#" style="text-decoration: none;color: #428bca;font-size: 13px"><span class="fa fa-gittip">&nbsp;&nbsp;我的生活</span></a><br/>
+                    <a href="#" style="text-decoration: none;color: black;font-size: 13px"><span class="glyphicon glyphicon-envelope marg" title="Email"> 联系我吧</span></a>
+                </address>
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading text-center"><strong>About me</strong></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text-muted">网页设计</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text-success">图像设计</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-success active" style="width: 25%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text-info">C语言</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-info active" style="width: 62%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text-warning">PPT设计</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-warning active" style="width:95%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="text-danger">其他</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-danger active" style="width:10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center"><strong>Contact with me</strong></div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">
+                            Email:
+                        </label>
+                        <div class="col-sm-10">
+                            <input type="email" id="email" class="form-control" placeholder="邮箱">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">
+                            Name:
+                        </label>
+                        <div class="col-sm-10">
+                            <input type="email" id="name" class="form-control" placeholder="姓名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary pull-right">发送</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-8 users">
+                    <h4>《佛外缘》</h4><br>
+                    <p> 她走进来说： 我停留</p>
+                    <p> 只能亥时到子时</p>
+
+                    <p> 你来赠我一百零八颗舍利子</p>
+                    <p> 说是前生火花的相思骨</p>
+                    <p> 又用菩提树年轮的心线</p>
+                    <p> 串成时间绵替的念珠</p>
+
+                    <p>  莫是今生邀我共同坐化</p>
+                    <p> 在一险峰清寂的洞府</p>
+                    <p> 一阴一阳两尊肉身</p>
+                    <p> 默数着念珠对坐千古</p>
+
+                    <p> 而我的心魔日归夜遁你如何知道</p>
+                    <p> 当我拈花是那心魔在微笑</p>
+                    <p> 每朝手写一百零八个痴字</p>
+                    <p> 恐怕情孽如九牛而修持如一毛 </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/page9/lixian1.jpg" width="100%"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-group" id="accordion">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none">我的作品</a>
+                    </div>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">
+                                <div class="row">
+                                    <div class="col-sm-4">爱旅行旅游网站</div>
+                                    <div class="col-sm-4">Bootstrap3 </div>
+                                    <div class="col-sm-4">2018/5/30</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-info">
+                                <div class="row">
+                                    <div class="col-sm-4">吃西瓜的小姐姐</div>
+                                    <div class="col-sm-4">PS </div>
+                                    <div class="col-sm-4">2018/5/30</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <div class="row">
+                                    <div class="col-sm-4">数组的回流</div>
+                                    <div class="col-sm-4">C</div>
+                                    <div class="col-sm-4">2018/5/30</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none">我的收藏</a>
+                    </div>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">
+                                <div class="row">
+                                    <div class="col-sm-4">《再别康桥》</div>
+                                    <div class="col-sm-4">轻轻的我走了，正如我轻轻的来；我轻轻的招手，作别西天的云彩...</div>
+                                    <div class="col-sm-4">徐志摩</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-info">
+                                <div class="row">
+                                    <div class="col-sm-4">《面朝大海，春暖花开》</div>
+                                    <div class="col-sm-4">从明天起，做一个幸福的人，喂马，劈柴，周游世界从明天起，关心粮食和蔬菜我有一所房子，面朝大海，春暖花开...</div>
+                                    <div class="col-sm-4">海子</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <div class="row">
+                                    <div class="col-sm-4">《雨巷》</div>
+                                    <div class="col-sm-4">撑着油纸伞，独自，彷徨在悠长，悠长又寂寥的雨巷...
+                                       </div>
+                                    <div class="col-sm-4">戴望舒</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapseThree" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none">我的作品</a>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div id="myCarousel" class="carousel slide">
+                                <!-- 轮播（Carousel）指标 -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                                </ol>
+                                <!-- 轮播（Carousel）项目 -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="images/page9/4.jpg" alt="First slide">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/page9/3.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/page9/2.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/page9/1.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <!-- 轮播（Carousel）导航 -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="margin-top: 50px">
+    <nav class="navbar-default navbar-fixed-bottom text-center">
+        <p>
+            © 2018 loveTravel.cn 京ICP备11845695号 京公网安备110845123401号 京ICP证909060号
+        </p>
+        <p>
+            营业执照 新出网证(京)字242号 爱旅行客服：国内 023-18166323171 海外 +86-18166323171  技术支持：黎东珂
+        </p>
+    </nav>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

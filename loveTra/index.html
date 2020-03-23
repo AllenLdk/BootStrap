@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<!-- css files -->
+<link href="./code/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="./code/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- /css files -->
+<!-- js files -->
+<script src="./code/js/modernizr.custom.js"></script>
+<!-- /js files -->
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Banner Section -->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="navbar-brand" style="color: grey;font-size: 20px;margin-top: 0px">爱旅行</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="./code/page0.html">欢迎页</a></li>
+				<li><a href="./code/page1.html">旅游资讯</a></li>
+				<li><a href="./code/page2.html">关于我们</a></li>
+				<li><a href="./code/page3.html">后台</a></li>
+				<li><a href="./code/page4.html">订单处理</a></li>
+				<li><a href="./code/page5.html">定制旅行</a></li>
+				<li><a href="./code/page6.html">旅行推荐</a></li>
+				<li><a href="./code/page7.html">活动专区</a></li>
+				<li><a href="./code/page8.html">论坛</a></li>
+				<li><a href="./code/page9.html">个人主页</a></li>
+				<li><a href="./code/page10.html">景点推荐</a></li>
+				<li><a href="./code/page11.html">个人中心</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Carousel  -->
+<div id="myCarousel" class="carousel slide" style="margin-top: -45px">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="./code/images/inx/banner1.jpg" alt="First slide">
+		</div>
+		<div class="item">
+			<img src="./code/images/inx/banner2.jpg" alt="Second slide">
+		</div>
+		<div class="item">
+			<img src="./code/images/inx/banner3.jpg" alt="Third slide">
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<!-- About Section -->
+<section class="about-us" id="about">
+	<h3 class="text-center slideanim">About Us</h3>
+	<p class="text-center slideanim">这里是一些关于我个人的信息</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6" style="float: right">
+				<img src="./code/images/inx/111.jpg" alt="about" class="img-responsive slideanim" style="width: 50%">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="about-info" style="margin-top: 20px;margin-left:200px">
+					<p style="font-size: 15px;line-height: 40px">姓名：黎东珂<br>
+					英文名：Allen<br>
+					年龄：20<br>
+					座右铭：好好学习，天天向上！<br></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /About Section -->
+<!-- Footer Section -->
+<section class="footer">
+	<div class="copyright">
+		<p>
+			© 2018 loveTravel.cn 京ICP备11845695号 京公网安备110845123401号 京ICP证909060号
+		</p>
+		<p>
+			营业执照 新出网证(京)字242号 爱旅行客服：国内 023-18166323171 海外 +86-18166323171  技术支持：黎东珂
+		</p>
+	</div>
+</section>
+<script src="./code/js/jquery.min.js"></script>
+<script src="./code/js/bootstrap.min.js"></script>
+<script src="./code/js/main.js"></script>
+<script>
+$(document).ready(function(){
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  var hash = this.hash;
+
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    window.location.hash = hash;
+    });
+  });
+})
+</script>
+<script>
+$(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
+</body>
+</html>

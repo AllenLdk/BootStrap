@@ -1,0 +1,93 @@
+@charset "UTF-8";
+main {
+  padding: 30px 0;
+}
+main header {
+  padding-right: 10px;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+main header h3 {
+  line-height: 40px;
+  background-color: #08499f;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+main header h3::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #08499f;
+  border-bottom-color: #08499f;
+  left: 84px;
+}
+main header a {
+  line-height: 40px;
+  color: #b2978c;
+}
+main header a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+main ul.colorChange a {
+  display: inline-block;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main ul.colorChange span {
+  color: #969696;
+  float: right;
+}
+main .lcj-media:hover {
+  cursor: pointer;
+}
+main .lcj-media h4 {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-bottom: 10px;
+  line-height: 26px;
+  color: #084c9f!important;
+}
+main .lcj-media p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding-bottom: 3px;
+}
+main .moreline a p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+main .url a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+main .url a:hover {
+  background-color: #08499f;
+  color: #fff;
+}
+main .url a img {
+  width: 100%;
+}
+main .url a p {
+  line-height: 40px;
+  text-align: center;
+}

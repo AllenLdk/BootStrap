@@ -1,0 +1,14 @@
+body{
+    padding-top: 70px;
+}
+.navbar-inverse{
+    background-color: #545454 !important;
+    color: #ffffff !important;
+    border-color: #545454 !important;
+}
+.marg{
+    margin-bottom: 10px;
+}
+.users p{
+    font-size: 14px;
+}
